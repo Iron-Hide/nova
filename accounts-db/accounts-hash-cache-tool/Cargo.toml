@@ -1,5 +1,5 @@
 [package]
-name = "agave-accounts-hash-cache-tool"
+name = "nova-accounts-hash-cache-tool"
 description = "Tool for accounts hash cache files"
 publish = false
 version = { workspace = true }

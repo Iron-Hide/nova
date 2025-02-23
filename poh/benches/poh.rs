@@ -97,7 +97,7 @@ fn bench_poh_recorder_record_transaction_index(bencher: &mut Bencher) {
         &PohConfig::default(),
         Arc::new(AtomicBool::default()),
     );
-    let h1 = hash(b"hello Agave, hello Anza!");
+    let h1 = hash(b"hello Nova, hello Anza!");
 
     poh_recorder.set_bank_with_transaction_index_for_test(bank.clone());
     poh_recorder.tick();

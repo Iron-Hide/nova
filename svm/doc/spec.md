@@ -22,7 +22,7 @@ We envision the following applications for SVM
 - **Transaction execution in Solana Validator**
 
     This is the primary use case for the SVM. It remains a major
-    component of the Agave Validator, but with clear interface and
+    component of the Nova Validator, but with clear interface and
     isolated from dependencies on other components.
 
     The SVM is currently viewed as realizing two stages of the

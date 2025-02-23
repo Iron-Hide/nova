@@ -27,7 +27,7 @@ use {
         },
         validator::{BlockProductionMethod, TransactionStructure},
     },
-    agave_banking_stage_ingress_types::BankingPacketReceiver,
+    nova_banking_stage_ingress_types::BankingPacketReceiver,
     crossbeam_channel::{unbounded, Receiver, RecvTimeoutError, Sender},
     histogram::Histogram,
     solana_client::connection_cache::ConnectionCache,
@@ -857,7 +857,7 @@ mod tests {
     use {
         super::*,
         crate::banking_trace::{BankingTracer, Channels},
-        agave_banking_stage_ingress_types::BankingPacketBatch,
+        nova_banking_stage_ingress_types::BankingPacketBatch,
         crossbeam_channel::{unbounded, Receiver},
         itertools::Itertools,
         solana_entry::entry::{self, Entry, EntrySlice},

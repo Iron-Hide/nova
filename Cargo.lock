@@ -76,334 +76,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "agave-accounts-hash-cache-tool"
-version = "2.2.0"
-dependencies = [
- "ahash 0.8.11",
- "anyhow",
- "bytemuck",
- "clap 2.33.3",
- "memmap2",
- "rayon",
- "solana-accounts-db",
- "solana-clap-utils",
- "solana-pubkey",
- "solana-version",
-]
-
-[[package]]
-name = "agave-banking-stage-ingress-types"
-version = "2.2.0"
-dependencies = [
- "crossbeam-channel",
- "solana-perf",
-]
-
-[[package]]
-name = "agave-cargo-registry"
-version = "2.2.0"
-dependencies = [
- "clap 2.33.3",
- "flate2",
- "hex",
- "hyper 0.14.32",
- "log",
- "serde",
- "serde_derive",
- "serde_json",
- "sha2 0.10.8",
- "solana-clap-utils",
- "solana-cli",
- "solana-cli-config",
- "solana-cli-output",
- "solana-commitment-config",
- "solana-keypair",
- "solana-logger",
- "solana-pubkey",
- "solana-remote-wallet",
- "solana-rpc-client",
- "solana-rpc-client-api",
- "solana-signer",
- "solana-version",
- "tar",
- "tempfile",
- "tokio",
- "toml 0.8.12",
-]
-
-[[package]]
-name = "agave-geyser-plugin-interface"
-version = "2.2.0"
-dependencies = [
- "log",
- "solana-clock",
- "solana-signature",
- "solana-transaction",
- "solana-transaction-status",
- "thiserror 2.0.11",
-]
-
-[[package]]
-name = "agave-install"
-version = "2.2.0"
-dependencies = [
- "atty",
- "bincode",
- "bzip2",
- "chrono",
- "clap 2.33.3",
- "console",
- "crossbeam-channel",
- "ctrlc",
- "dirs-next",
- "indicatif",
- "lazy_static",
- "nix",
- "reqwest",
- "scopeguard",
- "semver 1.0.25",
- "serde",
- "serde_derive",
- "serde_yaml 0.8.26",
- "serde_yaml 0.9.34+deprecated",
- "solana-clap-utils",
- "solana-config-program",
- "solana-hash",
- "solana-keypair",
- "solana-logger",
- "solana-message",
- "solana-pubkey",
- "solana-rpc-client",
- "solana-sha256-hasher",
- "solana-signature",
- "solana-signer",
- "solana-transaction",
- "solana-version",
- "tar",
- "tempfile",
- "url 2.5.4",
- "winapi 0.3.9",
- "winreg",
-]
-
-[[package]]
-name = "agave-ledger-tool"
-version = "2.2.0"
-dependencies = [
- "assert_cmd",
- "bs58",
- "chrono",
- "clap 2.33.3",
- "crossbeam-channel",
- "csv",
- "dashmap",
- "futures 0.3.31",
- "histogram",
- "itertools 0.12.1",
- "log",
- "num_cpus",
- "rayon",
- "regex",
- "serde",
- "serde_bytes",
- "serde_derive",
- "serde_json",
- "signal-hook",
- "solana-account-decoder",
- "solana-accounts-db",
- "solana-bpf-loader-program",
- "solana-clap-utils",
- "solana-cli-output",
- "solana-compute-budget",
- "solana-core",
- "solana-cost-model",
- "solana-entry",
- "solana-feature-set",
- "solana-geyser-plugin-manager",
- "solana-gossip",
- "solana-ledger",
- "solana-log-collector",
- "solana-logger",
- "solana-measure",
- "solana-program-runtime",
- "solana-rpc",
- "solana-runtime",
- "solana-runtime-transaction",
- "solana-sbpf",
- "solana-sdk",
- "solana-stake-program",
- "solana-storage-bigtable",
- "solana-streamer",
- "solana-transaction-status",
- "solana-type-overrides",
- "solana-unified-scheduler-pool",
- "solana-version",
- "solana-vote-program",
- "thiserror 2.0.11",
- "tikv-jemallocator",
- "tokio",
-]
-
-[[package]]
-name = "agave-store-histogram"
-version = "2.2.0"
-dependencies = [
- "clap 2.33.3",
- "solana-version",
-]
-
-[[package]]
-name = "agave-store-tool"
-version = "2.2.0"
-dependencies = [
- "ahash 0.8.11",
- "clap 2.33.3",
- "rayon",
- "solana-account",
- "solana-accounts-db",
- "solana-pubkey",
- "solana-system-interface",
- "solana-version",
-]
-
-[[package]]
-name = "agave-thread-manager"
-version = "2.2.0"
-dependencies = [
- "affinity",
- "agave-thread-manager",
- "anyhow",
- "axum 0.7.9",
- "cfg-if 1.0.0",
- "env_logger",
- "hyper 0.14.32",
- "log",
- "num_cpus",
- "rayon",
- "serde",
- "serde_json",
- "solana-metrics",
- "thread-priority",
- "tokio",
- "toml 0.8.12",
- "tower 0.5.2",
-]
-
-[[package]]
-name = "agave-transaction-view"
-version = "2.2.0"
-dependencies = [
- "agave-transaction-view",
- "bincode",
- "criterion",
- "solana-hash",
- "solana-instruction",
- "solana-keypair",
- "solana-message",
- "solana-packet",
- "solana-pubkey",
- "solana-sdk-ids",
- "solana-short-vec",
- "solana-signature",
- "solana-signer",
- "solana-svm-transaction",
- "solana-system-interface",
- "solana-transaction",
-]
-
-[[package]]
-name = "agave-validator"
-version = "2.2.0"
-dependencies = [
- "agave-geyser-plugin-interface",
- "assert_cmd",
- "chrono",
- "clap 2.33.3",
- "console",
- "core_affinity",
- "crossbeam-channel",
- "fd-lock",
- "indicatif",
- "itertools 0.12.1",
- "jsonrpc-core",
- "jsonrpc-core-client",
- "jsonrpc-derive",
- "jsonrpc-ipc-server",
- "lazy_static",
- "libc",
- "libloading",
- "log",
- "num_cpus",
- "predicates",
- "rand 0.8.5",
- "rayon",
- "serde",
- "serde_json",
- "serde_yaml 0.9.34+deprecated",
- "signal-hook",
- "solana-account-decoder",
- "solana-accounts-db",
- "solana-clap-utils",
- "solana-cli-config",
- "solana-core",
- "solana-download-utils",
- "solana-entry",
- "solana-faucet",
- "solana-genesis-utils",
- "solana-geyser-plugin-manager",
- "solana-gossip",
- "solana-inline-spl",
- "solana-ledger",
- "solana-logger",
- "solana-metrics",
- "solana-net-utils",
- "solana-perf",
- "solana-poh",
- "solana-program-runtime",
- "solana-rayon-threadlimit",
- "solana-rpc",
- "solana-rpc-client",
- "solana-rpc-client-api",
- "solana-runtime",
- "solana-sdk",
- "solana-send-transaction-service",
- "solana-storage-bigtable",
- "solana-streamer",
- "solana-test-validator",
- "solana-tpu-client",
- "solana-unified-scheduler-pool",
- "solana-version",
- "solana-vote-program",
- "spl-token-2022 7.0.0",
- "symlink",
- "tempfile",
- "thiserror 2.0.11",
- "tikv-jemallocator",
- "tokio",
-]
-
-[[package]]
-name = "agave-watchtower"
-version = "2.2.0"
-dependencies = [
- "clap 2.33.3",
- "humantime",
- "log",
- "solana-clap-utils",
- "solana-cli-config",
- "solana-cli-output",
- "solana-hash",
- "solana-logger",
- "solana-metrics",
- "solana-native-token",
- "solana-notifier",
- "solana-pubkey",
- "solana-rpc-client",
- "solana-rpc-client-api",
- "solana-version",
-]
-
-[[package]]
 name = "ahash"
 version = "0.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4103,6 +3775,334 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "61807f77802ff30975e01f4f071c8ba10c022052f98b3294119f3e615d13e5be"
 
 [[package]]
+name = "nova-accounts-hash-cache-tool"
+version = "2.2.0"
+dependencies = [
+ "ahash 0.8.11",
+ "anyhow",
+ "bytemuck",
+ "clap 2.33.3",
+ "memmap2",
+ "rayon",
+ "solana-accounts-db",
+ "solana-clap-utils",
+ "solana-pubkey",
+ "solana-version",
+]
+
+[[package]]
+name = "nova-banking-stage-ingress-types"
+version = "2.2.0"
+dependencies = [
+ "crossbeam-channel",
+ "solana-perf",
+]
+
+[[package]]
+name = "nova-cargo-registry"
+version = "2.2.0"
+dependencies = [
+ "clap 2.33.3",
+ "flate2",
+ "hex",
+ "hyper 0.14.32",
+ "log",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "sha2 0.10.8",
+ "solana-clap-utils",
+ "solana-cli",
+ "solana-cli-config",
+ "solana-cli-output",
+ "solana-commitment-config",
+ "solana-keypair",
+ "solana-logger",
+ "solana-pubkey",
+ "solana-remote-wallet",
+ "solana-rpc-client",
+ "solana-rpc-client-api",
+ "solana-signer",
+ "solana-version",
+ "tar",
+ "tempfile",
+ "tokio",
+ "toml 0.8.12",
+]
+
+[[package]]
+name = "nova-geyser-plugin-interface"
+version = "2.2.0"
+dependencies = [
+ "log",
+ "solana-clock",
+ "solana-signature",
+ "solana-transaction",
+ "solana-transaction-status",
+ "thiserror 2.0.11",
+]
+
+[[package]]
+name = "nova-install"
+version = "2.2.0"
+dependencies = [
+ "atty",
+ "bincode",
+ "bzip2",
+ "chrono",
+ "clap 2.33.3",
+ "console",
+ "crossbeam-channel",
+ "ctrlc",
+ "dirs-next",
+ "indicatif",
+ "lazy_static",
+ "nix",
+ "reqwest",
+ "scopeguard",
+ "semver 1.0.25",
+ "serde",
+ "serde_derive",
+ "serde_yaml 0.8.26",
+ "serde_yaml 0.9.34+deprecated",
+ "solana-clap-utils",
+ "solana-config-program",
+ "solana-hash",
+ "solana-keypair",
+ "solana-logger",
+ "solana-message",
+ "solana-pubkey",
+ "solana-rpc-client",
+ "solana-sha256-hasher",
+ "solana-signature",
+ "solana-signer",
+ "solana-transaction",
+ "solana-version",
+ "tar",
+ "tempfile",
+ "url 2.5.4",
+ "winapi 0.3.9",
+ "winreg",
+]
+
+[[package]]
+name = "nova-ledger-tool"
+version = "2.2.0"
+dependencies = [
+ "assert_cmd",
+ "bs58",
+ "chrono",
+ "clap 2.33.3",
+ "crossbeam-channel",
+ "csv",
+ "dashmap",
+ "futures 0.3.31",
+ "histogram",
+ "itertools 0.12.1",
+ "log",
+ "num_cpus",
+ "rayon",
+ "regex",
+ "serde",
+ "serde_bytes",
+ "serde_derive",
+ "serde_json",
+ "signal-hook",
+ "solana-account-decoder",
+ "solana-accounts-db",
+ "solana-bpf-loader-program",
+ "solana-clap-utils",
+ "solana-cli-output",
+ "solana-compute-budget",
+ "solana-core",
+ "solana-cost-model",
+ "solana-entry",
+ "solana-feature-set",
+ "solana-geyser-plugin-manager",
+ "solana-gossip",
+ "solana-ledger",
+ "solana-log-collector",
+ "solana-logger",
+ "solana-measure",
+ "solana-program-runtime",
+ "solana-rpc",
+ "solana-runtime",
+ "solana-runtime-transaction",
+ "solana-sbpf",
+ "solana-sdk",
+ "solana-stake-program",
+ "solana-storage-bigtable",
+ "solana-streamer",
+ "solana-transaction-status",
+ "solana-type-overrides",
+ "solana-unified-scheduler-pool",
+ "solana-version",
+ "solana-vote-program",
+ "thiserror 2.0.11",
+ "tikv-jemallocator",
+ "tokio",
+]
+
+[[package]]
+name = "nova-store-histogram"
+version = "2.2.0"
+dependencies = [
+ "clap 2.33.3",
+ "solana-version",
+]
+
+[[package]]
+name = "nova-store-tool"
+version = "2.2.0"
+dependencies = [
+ "ahash 0.8.11",
+ "clap 2.33.3",
+ "rayon",
+ "solana-account",
+ "solana-accounts-db",
+ "solana-pubkey",
+ "solana-system-interface",
+ "solana-version",
+]
+
+[[package]]
+name = "nova-thread-manager"
+version = "2.2.0"
+dependencies = [
+ "affinity",
+ "anyhow",
+ "axum 0.7.9",
+ "cfg-if 1.0.0",
+ "env_logger",
+ "hyper 0.14.32",
+ "log",
+ "nova-thread-manager",
+ "num_cpus",
+ "rayon",
+ "serde",
+ "serde_json",
+ "solana-metrics",
+ "thread-priority",
+ "tokio",
+ "toml 0.8.12",
+ "tower 0.5.2",
+]
+
+[[package]]
+name = "nova-transaction-view"
+version = "2.2.0"
+dependencies = [
+ "bincode",
+ "criterion",
+ "nova-transaction-view",
+ "solana-hash",
+ "solana-instruction",
+ "solana-keypair",
+ "solana-message",
+ "solana-packet",
+ "solana-pubkey",
+ "solana-sdk-ids",
+ "solana-short-vec",
+ "solana-signature",
+ "solana-signer",
+ "solana-svm-transaction",
+ "solana-system-interface",
+ "solana-transaction",
+]
+
+[[package]]
+name = "nova-validator"
+version = "2.2.0"
+dependencies = [
+ "assert_cmd",
+ "chrono",
+ "clap 2.33.3",
+ "console",
+ "core_affinity",
+ "crossbeam-channel",
+ "fd-lock",
+ "indicatif",
+ "itertools 0.12.1",
+ "jsonrpc-core",
+ "jsonrpc-core-client",
+ "jsonrpc-derive",
+ "jsonrpc-ipc-server",
+ "lazy_static",
+ "libc",
+ "libloading",
+ "log",
+ "nova-geyser-plugin-interface",
+ "num_cpus",
+ "predicates",
+ "rand 0.8.5",
+ "rayon",
+ "serde",
+ "serde_json",
+ "serde_yaml 0.9.34+deprecated",
+ "signal-hook",
+ "solana-account-decoder",
+ "solana-accounts-db",
+ "solana-clap-utils",
+ "solana-cli-config",
+ "solana-core",
+ "solana-download-utils",
+ "solana-entry",
+ "solana-faucet",
+ "solana-genesis-utils",
+ "solana-geyser-plugin-manager",
+ "solana-gossip",
+ "solana-inline-spl",
+ "solana-ledger",
+ "solana-logger",
+ "solana-metrics",
+ "solana-net-utils",
+ "solana-perf",
+ "solana-poh",
+ "solana-program-runtime",
+ "solana-rayon-threadlimit",
+ "solana-rpc",
+ "solana-rpc-client",
+ "solana-rpc-client-api",
+ "solana-runtime",
+ "solana-sdk",
+ "solana-send-transaction-service",
+ "solana-storage-bigtable",
+ "solana-streamer",
+ "solana-test-validator",
+ "solana-tpu-client",
+ "solana-unified-scheduler-pool",
+ "solana-version",
+ "solana-vote-program",
+ "spl-token-2022 7.0.0",
+ "symlink",
+ "tempfile",
+ "thiserror 2.0.11",
+ "tikv-jemallocator",
+ "tokio",
+]
+
+[[package]]
+name = "nova-watchtower"
+version = "2.2.0"
+dependencies = [
+ "clap 2.33.3",
+ "humantime",
+ "log",
+ "solana-clap-utils",
+ "solana-cli-config",
+ "solana-cli-output",
+ "solana-hash",
+ "solana-logger",
+ "solana-metrics",
+ "solana-native-token",
+ "solana-notifier",
+ "solana-pubkey",
+ "solana-rpc-client",
+ "solana-rpc-client-api",
+ "solana-version",
+]
+
+[[package]]
 name = "num"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -6320,11 +6320,11 @@ dependencies = [
 name = "solana-banking-bench"
 version = "2.2.0"
 dependencies = [
- "agave-banking-stage-ingress-types",
  "assert_matches",
  "clap 3.2.23",
  "crossbeam-channel",
  "log",
+ "nova-banking-stage-ingress-types",
  "rand 0.8.5",
  "rayon",
  "solana-client",
@@ -7190,9 +7190,6 @@ dependencies = [
 name = "solana-core"
 version = "2.2.0"
 dependencies = [
- "agave-banking-stage-ingress-types",
- "agave-thread-manager",
- "agave-transaction-view",
  "ahash 0.8.11",
  "anyhow",
  "arrayvec",
@@ -7213,6 +7210,9 @@ dependencies = [
  "log",
  "lru",
  "min-max-heap",
+ "nova-banking-stage-ingress-types",
+ "nova-thread-manager",
+ "nova-transaction-view",
  "num_enum",
  "prio-graph",
  "qualifier_attr",
@@ -7802,13 +7802,13 @@ dependencies = [
 name = "solana-geyser-plugin-manager"
 version = "2.2.0"
 dependencies = [
- "agave-geyser-plugin-interface",
  "bs58",
  "crossbeam-channel",
  "json5",
  "jsonrpc-core",
  "libloading",
  "log",
+ "nova-geyser-plugin-interface",
  "serde_json",
  "solana-account",
  "solana-accounts-db",
@@ -9260,7 +9260,6 @@ dependencies = [
 name = "solana-runtime"
 version = "2.2.0"
 dependencies = [
- "agave-transaction-view",
  "ahash 0.8.11",
  "aquamarine",
  "arrayref",
@@ -9288,6 +9287,7 @@ dependencies = [
  "memoffset 0.9.1",
  "mockall",
  "modular-bitfield",
+ "nova-transaction-view",
  "num-derive",
  "num-traits",
  "num_cpus",
@@ -9358,10 +9358,10 @@ dependencies = [
 name = "solana-runtime-transaction"
 version = "2.2.0"
 dependencies = [
- "agave-transaction-view",
  "bincode",
  "criterion",
  "log",
+ "nova-transaction-view",
  "rand 0.8.5",
  "solana-compute-budget",
  "solana-compute-budget-instruction",
@@ -10609,7 +10609,6 @@ dependencies = [
 name = "solana-unified-scheduler-pool"
 version = "2.2.0"
 dependencies = [
- "agave-banking-stage-ingress-types",
  "aquamarine",
  "assert_matches",
  "crossbeam-channel",
@@ -10619,6 +10618,7 @@ dependencies = [
  "dyn-clone",
  "lazy_static",
  "log",
+ "nova-banking-stage-ingress-types",
  "qualifier_attr",
  "scopeguard",
  "solana-clock",

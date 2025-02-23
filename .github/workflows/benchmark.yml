@@ -6,7 +6,7 @@ on:
 
 jobs:
   benchmark:
-    if: github.repository == 'anza-xyz/agave'
+    if: github.repository == 'anza-xyz/nova'
     name: benchmark
     runs-on: benchmark
     strategy:

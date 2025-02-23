@@ -1,6 +1,6 @@
 // static account keys has max
 use {
-    agave_transaction_view::static_account_keys_frame::MAX_STATIC_ACCOUNTS_PER_PACKET as FILTER_SIZE,
+    nova_transaction_view::static_account_keys_frame::MAX_STATIC_ACCOUNTS_PER_PACKET as FILTER_SIZE,
     solana_pubkey::Pubkey, solana_svm_transaction::instruction::SVMInstruction,
 };
 

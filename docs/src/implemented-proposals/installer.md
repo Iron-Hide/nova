@@ -13,16 +13,16 @@ This document proposes an easy to use software install and updater that can be u
 The easiest install method for supported platforms:
 
 ```bash
-$ curl -sSf https://raw.githubusercontent.com/solana-labs/solana/v1.0.0/install/agave-install-init.sh | sh
+$ curl -sSf https://raw.githubusercontent.com/solana-labs/solana/v1.0.0/install/nova-install-init.sh | sh
 ```
 
-This script will check github for the latest tagged release and download and run the `agave-install-init` binary from there.
+This script will check github for the latest tagged release and download and run the `nova-install-init` binary from there.
 
 If additional arguments need to be specified during the installation, the following shell syntax is used:
 
 ```bash
-$ init_args=.... # arguments for `agave-install-init ...`
-$ curl -sSf https://raw.githubusercontent.com/solana-labs/solana/v1.0.0/install/agave-install-init.sh | sh -s - ${init_args}
+$ init_args=.... # arguments for `nova-install-init ...`
+$ curl -sSf https://raw.githubusercontent.com/solana-labs/solana/v1.0.0/install/nova-install-init.sh | sh -s - ${init_args}
 ```
 
 ### Fetch and run a pre-built installer from a Github release
@@ -30,9 +30,9 @@ $ curl -sSf https://raw.githubusercontent.com/solana-labs/solana/v1.0.0/install/
 With a well-known release URL, a pre-built binary can be obtained for supported platforms:
 
 ```bash
-$ curl -o agave-install-init https://github.com/solana-labs/solana/releases/download/v1.0.0/agave-install-init-x86_64-apple-darwin
-$ chmod +x ./agave-install-init
-$ ./agave-install-init --help
+$ curl -o nova-install-init https://github.com/solana-labs/solana/releases/download/v1.0.0/nova-install-init-x86_64-apple-darwin
+$ chmod +x ./nova-install-init
+$ ./nova-install-init --help
 ```
 
 ### Build and run the installer from source
@@ -51,16 +51,16 @@ Given a solana release tarball \(as created by `ci/publish-tarball.sh`\) that ha
 
 ```bash
 $ solana-keygen new -o update-manifest.json  # <-- only generated once, the public key is shared with users
-$ agave-install deploy http://example.com/path/to/solana-release.tar.bz2 update-manifest.json
+$ nova-install deploy http://example.com/path/to/solana-release.tar.bz2 update-manifest.json
 ```
 
 ### Run a validator node that auto updates itself
 
 ```bash
-$ agave-install init --pubkey 92DMonmBYXwEMHJ99c9ceRSpAmk9v6i3RdvDdXaVcrfj  # <-- pubkey is obtained from whoever is deploying the updates
-$ export PATH=~/.local/share/agave-install/bin:$PATH
+$ nova-install init --pubkey 92DMonmBYXwEMHJ99c9ceRSpAmk9v6i3RdvDdXaVcrfj  # <-- pubkey is obtained from whoever is deploying the updates
+$ export PATH=~/.local/share/nova-install/bin:$PATH
 $ solana-keygen ...  # <-- runs the latest solana-keygen
-$ agave-install run agave-validator ...  # <-- runs a validator, restarting it as necessary when an update is applied
+$ nova-install run nova-validator ...  # <-- runs a validator, restarting it as necessary when an update is applied
 ```
 
 ## On-chain Update Manifest
@@ -87,9 +87,9 @@ pub struct SignedUpdateManifest {
 }
 ```
 
-Note that the `manifest` field itself contains a corresponding signature \(`manifest_signature`\) to guard against man-in-the-middle attacks between the `agave-install` tool and the solana cluster RPC API.
+Note that the `manifest` field itself contains a corresponding signature \(`manifest_signature`\) to guard against man-in-the-middle attacks between the `nova-install` tool and the solana cluster RPC API.
 
-To guard against rollback attacks, `agave-install` will refuse to install an update with an older `timestamp_secs` than what is currently installed.
+To guard against rollback attacks, `nova-install` will refuse to install an update with an older `timestamp_secs` than what is currently installed.
 
 ## Release Archive Contents
 
@@ -101,17 +101,17 @@ A release archive is expected to be a tar file compressed with bzip2 with the fo
 
 - `/bin/` -- directory containing available programs in the release.
 
-  `agave-install` will symlink this directory to
+  `nova-install` will symlink this directory to
 
-  `~/.local/share/agave-install/bin` for use by the `PATH` environment
+  `~/.local/share/nova-install/bin` for use by the `PATH` environment
 
   variable.
 
 - `...` -- any additional files and directories are permitted
 
-## agave-install Tool
+## nova-install Tool
 
-The `agave-install` tool is used by the user to install and update their cluster software.
+The `nova-install` tool is used by the user to install and update their cluster software.
 
 It manages the following files and directories in the user's home directory:
 
@@ -122,11 +122,11 @@ It manages the following files and directories in the user's home directory:
 ### Command-line Interface
 
 ```text
-agave-install 0.16.0
+nova-install 0.16.0
 The solana cluster software installer
 
 USAGE:
-    agave-install [OPTIONS] <SUBCOMMAND>
+    nova-install [OPTIONS] <SUBCOMMAND>
 
 FLAGS:
     -h, --help       Prints help information
@@ -145,11 +145,11 @@ SUBCOMMANDS:
 ```
 
 ```text
-agave-install-init
+nova-install-init
 initializes a new installation
 
 USAGE:
-    agave-install init [OPTIONS]
+    nova-install init [OPTIONS]
 
 FLAGS:
     -h, --help    Prints help information
@@ -161,11 +161,11 @@ OPTIONS:
 ```
 
 ```text
-agave-install info
+nova-install info
 displays information about the current installation
 
 USAGE:
-    agave-install info [FLAGS]
+    nova-install info [FLAGS]
 
 FLAGS:
     -h, --help     Prints help information
@@ -173,11 +173,11 @@ FLAGS:
 ```
 
 ```text
-agave-install deploy
+nova-install deploy
 deploys a new update
 
 USAGE:
-    agave-install deploy <download_url> <update_manifest_keypair>
+    nova-install deploy <download_url> <update_manifest_keypair>
 
 FLAGS:
     -h, --help    Prints help information
@@ -188,22 +188,22 @@ ARGS:
 ```
 
 ```text
-agave-install update
+nova-install update
 checks for an update, and if available downloads and applies it
 
 USAGE:
-    agave-install update
+    nova-install update
 
 FLAGS:
     -h, --help    Prints help information
 ```
 
 ```text
-agave-install run
+nova-install run
 Runs a program while periodically checking and applying software updates
 
 USAGE:
-    agave-install run <program_name> [program_arguments]...
+    nova-install run <program_name> [program_arguments]...
 
 FLAGS:
     -h, --help    Prints help information

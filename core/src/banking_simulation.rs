@@ -10,7 +10,7 @@ use {
         },
         validator::{BlockProductionMethod, TransactionStructure},
     },
-    agave_banking_stage_ingress_types::BankingPacketBatch,
+    nova_banking_stage_ingress_types::BankingPacketBatch,
     assert_matches::assert_matches,
     bincode::deserialize_from,
     crossbeam_channel::{unbounded, Sender},

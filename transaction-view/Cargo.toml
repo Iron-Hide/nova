@@ -1,7 +1,7 @@
 [package]
-name = "agave-transaction-view"
-description = "Agave TranactionView"
-documentation = "https://docs.rs/agave-transaction-view"
+name = "nova-transaction-view"
+description = "Nova TranactionView"
+documentation = "https://docs.rs/nova-transaction-view"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -21,7 +21,7 @@ solana-svm-transaction = { workspace = true }
 
 [dev-dependencies]
 # See order-crates-for-publishing.py for using this unusual `path = "."`
-agave-transaction-view = { path = ".", features = ["dev-context-only-utils"] }
+nova-transaction-view = { path = ".", features = ["dev-context-only-utils"] }
 bincode = { workspace = true }
 criterion = { workspace = true }
 solana-instruction = { workspace = true }

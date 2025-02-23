@@ -1,6 +1,6 @@
 use {
     crate::geyser_plugin_manager::GeyserPluginManager,
-    agave_geyser_plugin_interface::geyser_plugin_interface::SlotStatus,
+    nova_geyser_plugin_interface::geyser_plugin_interface::SlotStatus,
     log::*,
     solana_clock::Slot,
     solana_measure::measure::Measure,

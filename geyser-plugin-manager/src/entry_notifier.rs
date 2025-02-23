@@ -1,7 +1,7 @@
 /// Module responsible for notifying plugins about entries
 use {
     crate::geyser_plugin_manager::GeyserPluginManager,
-    agave_geyser_plugin_interface::geyser_plugin_interface::{
+    nova_geyser_plugin_interface::geyser_plugin_interface::{
         ReplicaEntryInfoV2, ReplicaEntryInfoVersions,
     },
     log::*,

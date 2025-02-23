@@ -1,8 +1,8 @@
 [package]
-name = "agave-validator"
+name = "nova-validator"
 description = "Blockchain, Rebuilt for Scale"
-documentation = "https://docs.rs/agave-validator"
-default-run = "agave-validator"
+documentation = "https://docs.rs/nova-validator"
+default-run = "nova-validator"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -11,7 +11,7 @@ license = { workspace = true }
 edition = { workspace = true }
 
 [dependencies]
-agave-geyser-plugin-interface = { workspace = true }
+nova-geyser-plugin-interface = { workspace = true }
 chrono = { workspace = true, features = ["default", "serde"] }
 clap = { workspace = true }
 console = { workspace = true }

@@ -33,7 +33,7 @@ More information on AWS CLI configuration can be found [here](https://docs.aws.a
 ## Metrics configuration (Optional)
 Metrics collection relies on 2 environment variables that are patched to the remote nodes by net.sh:
  * `RUST_LOG` to enable metrics reporting in principle
- * `SOLANA_METRICS_CONFIG` to tell agave where to log the metrics
+ * `SOLANA_METRICS_CONFIG` to tell nova where to log the metrics
 
 ### Preparation
 > [!NOTE]
@@ -46,7 +46,7 @@ rights to create a new InfluxDB database, for example `solana`.
 ### To set up the metrics
 You will normally only need to do this once. Once this is done, you will be able to save the metrics configuration and load it later from the environment.
 
-* Go to ./net/ in agave repo
+* Go to ./net/ in nova repo
 * Run `./init-metrics.sh -c testnet-dev-${user} ${user} `
   * Script will ask for a password, it is the same one you’ve created when making a user in the InfluxDB UI
   * Put the username you have used in preparation, not your login user name
@@ -60,7 +60,7 @@ You will normally only need to do this once. Once this is done, you will be able
 * For simple cases, storing `SOLANA_METRICS_CONFIG` in your env is appropriate, but you may want to use different databases for different runs of net.sh
   * You can call ./init-metrics.sh before you call net.sh start, this will change the metrics config for a particular run.
   * You can manually write `SOLANA_METRICS_CONFIG` in the `./net/config/config` file
-* By default, metrics are only logged by agave if `RUST_LOG` is set to `info` or higher. You can provide it as environment for `./net.sh start` command, or set this in your shell environment.
+* By default, metrics are only logged by nova if `RUST_LOG` is set to `info` or higher. You can provide it as environment for `./net.sh start` command, or set this in your shell environment.
   ```bash
   RUST_LOG="info,solana_runtime=debug"
   ```
@@ -88,7 +88,7 @@ NOTE: This example uses GCE.  If you are using AWS EC2, replace `./gce.sh` with
 `./ec2.sh` in the commands.
 
 ```bash
-# In Agave repo
+# In Nova repo
 cd net/
 
 # Create a GCE testnet with 4 additional validator nodes (beyond the bootstrap node) and 1 client (billing starts here)
@@ -112,7 +112,7 @@ RUST_LOG=info ./net.sh start
 
 ## Full guide
 * If you expect metrics to work, make sure you have configured them before proceeding
-* Go to `./net/` directory in agave repo
+* Go to `./net/` directory in nova repo
 * `./gce.sh` command controls creation and destruction of the nodes in the test net. It does not actually run any software.
   * `./gce.sh create \-n 4 \-c 2` creates cluster with 4 validators and 1 node for load generation, this is minimal viable setup for all solana features to work
     * If the creation succeeds, `net/config/config` will contain the config file of the testnet just created
@@ -134,7 +134,7 @@ RUST_LOG=info ./net.sh start
      Bootstrap validator deployment took 164 seconds
      `Additional validator deployment (5 validators, 0 blockstreamer nodes) took 120 seconds
      Client deployment (1 instances) took 11 seconds
-     Network start logs in /home/sol/agave/net/log
+     Network start logs in /home/sol/nova/net/log
      ```
     * You can also make sure it logs successful test transfers:
     ```✅ 1 lamport(s) transferred: seq=0   time= 402ms signature=33uJtPJM6ekBGrWCgWHKw1TTQJVrLxYMe3sp2PUmSRVb21LyXn3nDbQmzsgQyihE7VP2zD2iR66Du8aDUnSSd6pb```

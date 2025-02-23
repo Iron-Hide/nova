@@ -1,5 +1,5 @@
 ---
-title: Agave Validator Requirements
+title: Nova Validator Requirements
 sidebar_position: 3
 sidebar_label: Requirements
 pagination_label: Requirements to Operate a Validator
@@ -7,7 +7,7 @@ pagination_label: Requirements to Operate a Validator
 
 ## Minimum SOL requirements
 
-There is no strict minimum amount of SOL required to run an Agave validator on Solana.
+There is no strict minimum amount of SOL required to run an Nova validator on Solana.
 
 However in order to participate in consensus, a vote account is required which
 has a rent-exempt reserve of 0.02685864 SOL. Voting also requires sending a vote
@@ -31,14 +31,14 @@ A community maintained list of currently optimal hardware can be found here: [so
 
 ## Virtual machines on Cloud Platforms
 
-Running an Agave node in the cloud requires significantly greater
+Running an Nova node in the cloud requires significantly greater
 operational expertise to achieve stability and performance. Do not
 expect to find sympathetic voices should you chose this route and
 find yourself in need of support.
 
 ## Docker
 
-Running an Agave validator for live clusters (including mainnet-beta) inside Docker is
+Running an Nova validator for live clusters (including mainnet-beta) inside Docker is
 not recommended and generally not supported. This is due to concerns of general
 Docker's containerization overhead and resultant performance degradation unless
 specially configured.

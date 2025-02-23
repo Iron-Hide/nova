@@ -429,7 +429,7 @@ impl FromIterator<(Pubkey, (/*stake:*/ u64, VoteAccount))> for VoteAccounts {
 }
 
 // This custom deserializer is needed to ensure compatibility at snapshot loading with versions
-// before https://github.com/anza-xyz/agave/pull/2659 which would theoretically allow invalid vote
+// before https://github.com/anza-xyz/nova/pull/2659 which would theoretically allow invalid vote
 // accounts in VoteAccounts.
 //
 // In the (near) future we should remove this custom deserializer and make it a hard error when we

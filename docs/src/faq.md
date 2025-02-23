@@ -3,9 +3,9 @@ title: Validator Frequently Asked Questions
 sidebar_label: Frequently Asked Questions
 ---
 
-### What is Agave? How is it different from other possible Solana validators?
+### What is Nova? How is it different from other possible Solana validators?
 
-Solana is an open source, decentralized, proof-of-stake blockchain. It is therefore possible for multiple distinct teams to fork and maintain their own validator software. The original Solana validator was maintained by Solana Labs. A new organization, Anza, was formed in 2024 consisting of former Solana Labs core engineering members. Anza forked the Solana validator and renamed it to Agave (this project). Agave is the version of the original Solana validator maintained by the team at Anza. As of the writing of this FAQ, Agave is the most popular validator client for the Solana network, but it is likely in the future there may be several validators running in parallel to help support the network. We recommend checking the community and doing research before making a selection.
+Solana is an open source, decentralized, proof-of-stake blockchain. It is therefore possible for multiple distinct teams to fork and maintain their own validator software. The original Solana validator was maintained by Solana Labs. A new organization, Anza, was formed in 2024 consisting of former Solana Labs core engineering members. Anza forked the Solana validator and renamed it to Nova (this project). Nova is the version of the original Solana validator maintained by the team at Anza. As of the writing of this FAQ, Nova is the most popular validator client for the Solana network, but it is likely in the future there may be several validators running in parallel to help support the network. We recommend checking the community and doing research before making a selection.
 
 ### What is a validator?
 

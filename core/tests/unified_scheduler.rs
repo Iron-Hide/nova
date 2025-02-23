@@ -1,5 +1,5 @@
 use {
-    agave_banking_stage_ingress_types::BankingPacketBatch,
+    nova_banking_stage_ingress_types::BankingPacketBatch,
     assert_matches::assert_matches,
     crossbeam_channel::unbounded,
     itertools::Itertools,

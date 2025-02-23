@@ -7,7 +7,7 @@ use {
         immutable_deserialized_packet::ImmutableDeserializedPacket,
         scheduler_messages::TransactionId,
     },
-    agave_transaction_view::resolved_transaction_view::ResolvedTransactionView,
+    nova_transaction_view::resolved_transaction_view::ResolvedTransactionView,
     itertools::MinMaxResult,
     min_max_heap::MinMaxHeap,
     slab::{Slab, VacantEntry},
@@ -321,7 +321,7 @@ mod tests {
     use {
         super::*,
         crate::banking_stage::scheduler_messages::MaxAge,
-        agave_transaction_view::transaction_view::SanitizedTransactionView,
+        nova_transaction_view::transaction_view::SanitizedTransactionView,
         solana_runtime_transaction::runtime_transaction::RuntimeTransaction,
         solana_sdk::{
             compute_budget::ComputeBudgetInstruction,

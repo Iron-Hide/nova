@@ -1,7 +1,7 @@
 #![cfg(feature = "sbf_rust")]
 
 use {
-    agave_validator::test_validator::*,
+    nova_validator::test_validator::*,
     solana_runtime::{
         bank::Bank,
         bank_client::BankClient,

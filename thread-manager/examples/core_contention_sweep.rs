@@ -1,5 +1,5 @@
 use {
-    agave_thread_manager::*,
+    nova_thread_manager::*,
     log::info,
     std::{collections::HashMap, time::Duration},
     tokio::sync::oneshot,

@@ -2,7 +2,7 @@
 #![feature(test)]
 
 use {
-    agave_banking_stage_ingress_types::BankingPacketBatch,
+    nova_banking_stage_ingress_types::BankingPacketBatch,
     solana_core::{
         banking_trace::Channels,
         validator::{BlockProductionMethod, TransactionStructure},

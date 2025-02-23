@@ -42,17 +42,17 @@ impl Default for ThreadManagerConfig {
 }
 
 impl ThreadManagerConfig {
-    /// Returns a valid "built-in" configuration for Agave that is safe to use in most cases.
+    /// Returns a valid "built-in" configuration for Nova that is safe to use in most cases.
     /// Most operators will likely use this.
-    pub fn default_for_agave() -> Self {
+    pub fn default_for_nova() -> Self {
         let config_str = include_str!("default_config.toml");
         toml::from_str(config_str).expect("Parsing the built-in config should never fail")
     }
 
-    /// Loads configuration from a given str, filling in the gaps from what default_for_agave returns
+    /// Loads configuration from a given str, filling in the gaps from what default_for_nova returns
     pub fn from_toml_str(toml: &str) -> Result<Self, Error> {
         let mut loaded: ThreadManagerConfig = toml::from_str(toml)?;
-        let mut result = Self::default_for_agave();
+        let mut result = Self::default_for_nova();
         macro_rules! upsert {
             ($name:ident) => {
                 result.$name.extend(loaded.$name.drain());

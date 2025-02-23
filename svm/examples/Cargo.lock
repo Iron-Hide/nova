@@ -76,7 +76,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "agave-banking-stage-ingress-types"
+name = "nova-banking-stage-ingress-types"
 version = "2.2.0"
 dependencies = [
  "crossbeam-channel",
@@ -84,7 +84,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "agave-geyser-plugin-interface"
+name = "nova-geyser-plugin-interface"
 version = "2.2.0"
 dependencies = [
  "log",
@@ -96,7 +96,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "agave-thread-manager"
+name = "nova-thread-manager"
 version = "2.2.0"
 dependencies = [
  "affinity",
@@ -113,7 +113,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "agave-transaction-view"
+name = "nova-transaction-view"
 version = "2.2.0"
 dependencies = [
  "solana-hash",
@@ -5565,9 +5565,9 @@ dependencies = [
 name = "solana-core"
 version = "2.2.0"
 dependencies = [
- "agave-banking-stage-ingress-types",
- "agave-thread-manager",
- "agave-transaction-view",
+ "nova-banking-stage-ingress-types",
+ "nova-thread-manager",
+ "nova-transaction-view",
  "ahash 0.8.11",
  "anyhow",
  "arrayvec",
@@ -5974,7 +5974,7 @@ dependencies = [
 name = "solana-geyser-plugin-manager"
 version = "2.2.0"
 dependencies = [
- "agave-geyser-plugin-interface",
+ "nova-geyser-plugin-interface",
  "bs58",
  "crossbeam-channel",
  "json5",
@@ -7218,7 +7218,7 @@ dependencies = [
 name = "solana-runtime-transaction"
 version = "2.2.0"
 dependencies = [
- "agave-transaction-view",
+ "nova-transaction-view",
  "log",
  "solana-compute-budget",
  "solana-compute-budget-instruction",
@@ -8218,7 +8218,7 @@ dependencies = [
 name = "solana-unified-scheduler-pool"
 version = "2.2.0"
 dependencies = [
- "agave-banking-stage-ingress-types",
+ "nova-banking-stage-ingress-types",
  "aquamarine",
  "assert_matches",
  "crossbeam-channel",

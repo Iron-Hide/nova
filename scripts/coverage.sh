@@ -64,7 +64,7 @@ TEST_ARGS=(
 # macro code green always. Also, forcibly discard the vast amount of log by
 # redirecting the stderr altogether on CI, where all tests are run unlike
 # developing.
-RUST_LOG="solana=trace,agave=trace,$RUST_LOG" INTERCEPT_OUTPUT=/dev/null "$here/../ci/intercept.sh" \
+RUST_LOG="solana=trace,nova=trace,$RUST_LOG" INTERCEPT_OUTPUT=/dev/null "$here/../ci/intercept.sh" \
   cargo +"$rust_nightly" test --features frozen-abi --target-dir "$here/../target/cov" "${PACKAGES[@]}" -- "${TEST_ARGS[@]}"
 
 # Generate test reports

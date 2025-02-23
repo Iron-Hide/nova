@@ -10,25 +10,25 @@
 # except according to those terms.
 
 # This is just a little script that can be downloaded from the internet to
-# install agave-install. It just does platform detection, downloads the installer
+# install nova-install. It just does platform detection, downloads the installer
 # and runs it.
 
 { # this ensures the entire script is downloaded #
 
 if [ -z "$SOLANA_DOWNLOAD_ROOT" ]; then
-    SOLANA_DOWNLOAD_ROOT="https://github.com/anza-xyz/agave/releases/download/"
+    SOLANA_DOWNLOAD_ROOT="https://github.com/anza-xyz/nova/releases/download/"
 fi
-GH_LATEST_RELEASE="https://api.github.com/repos/anza-xyz/agave/releases/latest"
+GH_LATEST_RELEASE="https://api.github.com/repos/anza-xyz/nova/releases/latest"
 
 set -e
 
 usage() {
     cat 1>&2 <<EOF
-agave-install-init
+nova-install-init
 initializes a new installation
 
 USAGE:
-    agave-install-init [FLAGS] [OPTIONS] --data_dir <PATH> --pubkey <PUBKEY>
+    nova-install-init [FLAGS] [OPTIONS] --data_dir <PATH> --pubkey <PUBKEY>
 
 FLAGS:
     -h, --help              Prints help information
@@ -81,7 +81,7 @@ main() {
     esac
     TARGET="${_cputype}-${_ostype}"
 
-    temp_dir="$(mktemp -d 2>/dev/null || ensure mktemp -d -t agave-install-init)"
+    temp_dir="$(mktemp -d 2>/dev/null || ensure mktemp -d -t nova-install-init)"
     ensure mkdir -p "$temp_dir"
 
     # Check for SOLANA_RELEASE environment variable override.  Otherwise fetch
@@ -101,8 +101,8 @@ main() {
       fi
     fi
 
-    download_url="$SOLANA_DOWNLOAD_ROOT/$release/agave-install-init-$TARGET"
-    solana_install_init="$temp_dir/agave-install-init"
+    download_url="$SOLANA_DOWNLOAD_ROOT/$release/nova-install-init-$TARGET"
+    solana_install_init="$temp_dir/nova-install-init"
 
     printf 'downloading %s installer\n' "$release" 1>&2
 
@@ -111,7 +111,7 @@ main() {
     ensure chmod u+x "$solana_install_init"
     if [ ! -x "$solana_install_init" ]; then
         printf '%s\n' "Cannot execute $solana_install_init (likely because of mounting /tmp as noexec)." 1>&2
-        printf '%s\n' "Please copy the file to a location where you can execute binaries and run ./agave-install-init." 1>&2
+        printf '%s\n' "Please copy the file to a location where you can execute binaries and run ./nova-install-init." 1>&2
         exit 1
     fi
 
@@ -130,7 +130,7 @@ main() {
 }
 
 err() {
-    printf 'agave-install-init: %s\n' "$1" >&2
+    printf 'nova-install-init: %s\n' "$1" >&2
     exit 1
 }
 

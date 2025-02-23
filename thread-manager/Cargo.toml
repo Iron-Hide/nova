@@ -1,6 +1,6 @@
 [package]
-name = "agave-thread-manager"
-description = "Thread pool manager for agave"
+name = "nova-thread-manager"
+description = "Thread pool manager for nova"
 
 version = { workspace = true }
 authors = { workspace = true }
@@ -25,7 +25,7 @@ toml = { workspace = true }
 affinity = "0.1.2"
 
 [dev-dependencies]
-agave-thread-manager = { path = ".", features = ["dev-context-only-utils"] }
+nova-thread-manager = { path = ".", features = ["dev-context-only-utils"] }
 axum = { workspace = true }
 env_logger = { workspace = true }
 hyper = { workspace = true, features = ["http1", "client", "stream", "tcp"] }

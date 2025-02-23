@@ -535,7 +535,7 @@ pub fn init(
     explicit_release: Option<ExplicitRelease>,
 ) -> Result<(), String> {
     let config = {
-        // Write new config file only if different, so that running |agave-install init|
+        // Write new config file only if different, so that running |nova-install init|
         // repeatedly doesn't unnecessarily re-download
         let mut current_config = Config::load(config_file).unwrap_or_default();
         current_config.current_update_manifest = None;
@@ -567,7 +567,7 @@ pub fn init(
 
 fn github_release_download_url(release_semver: &str) -> String {
     format!(
-        "https://github.com/anza-xyz/agave/releases/download/v{}/solana-release-{}.tar.bz2",
+        "https://github.com/anza-xyz/nova/releases/download/v{}/solana-release-{}.tar.bz2",
         release_semver,
         crate::build_env::TARGET
     )
@@ -865,7 +865,7 @@ fn check_for_newer_github_release(
     prerelease_allowed: bool,
 ) -> Result<Option<String>, String> {
     let client = reqwest::blocking::Client::builder()
-        .user_agent("agave-install")
+        .user_agent("nova-install")
         .build()
         .map_err(|err| err.to_string())?;
 
@@ -900,7 +900,7 @@ fn check_for_newer_github_release(
 
     while page == 1 || releases.len() == PER_PAGE {
         let url = reqwest::Url::parse_with_params(
-            "https://api.github.com/repos/anza-xyz/agave/releases",
+            "https://api.github.com/repos/anza-xyz/nova/releases",
             &[
                 ("per_page", &format!("{PER_PAGE}")),
                 ("page", &format!("{page}")),

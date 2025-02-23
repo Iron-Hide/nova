@@ -12,7 +12,7 @@ use {
         banking_trace::BankingPacketSender,
         sigverify_stage::{SigVerifier, SigVerifyServiceError},
     },
-    agave_banking_stage_ingress_types::BankingPacketBatch,
+    nova_banking_stage_ingress_types::BankingPacketBatch,
     solana_perf::{cuda_runtime::PinnedVec, packet::PacketBatch, recycler::Recycler, sigverify},
 };
 

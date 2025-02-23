@@ -13,8 +13,8 @@ communication.
 
 ### Expectations
 
-- Agave software releases include APIs, SDKs, and CLI tooling (with a few [exceptions](#exceptions)).
-- Agave software releases follow semantic versioning, more details below.
+- Nova software releases include APIs, SDKs, and CLI tooling (with a few [exceptions](#exceptions)).
+- Nova software releases follow semantic versioning, more details below.
 - Software for a `MINOR` version release will be compatible across all software on the
   same `MAJOR` version.
 
@@ -79,7 +79,7 @@ Major releases:
 - [`solana-program`](https://docs.rs/solana-program/) - Rust SDK for writing programs
 - [`solana-client`](https://docs.rs/solana-client/) - Rust client for connecting to RPC API
 - [`solana-cli-config`](https://docs.rs/solana-cli-config/) - Rust client for managing Solana CLI config files
-- [`agave-geyser-plugin-interface`](https://docs.rs/agave-geyser-plugin-interface/) - Rust interface for developing Solana Geyser plugins.
+- [`nova-geyser-plugin-interface`](https://docs.rs/nova-geyser-plugin-interface/) - Rust interface for developing Solana Geyser plugins.
 
 Patch releases:
 
@@ -115,7 +115,7 @@ Major releases:
 
 ### Runtime Features
 
-New Agave runtime features are feature-switched and manually activated. Runtime features
+New Nova runtime features are feature-switched and manually activated. Runtime features
 include: the introduction of new native programs, sysvars, and syscalls; and changes to
 their behavior. Feature activation is cluster agnostic, allowing confidence to be built on
 Testnet before activation on Mainnet-beta.

@@ -224,7 +224,7 @@ mod tests {
             println!("{:?}", cfg);
         }
     }
-    // Nobody runs Agave on windows, and on Mac we can not set mask affinity without patching external crate
+    // Nobody runs Nova on windows, and on Mac we can not set mask affinity without patching external crate
     #[cfg(target_os = "linux")]
     fn validate_affinity(expect_cores: &[usize], error_msg: &str) {
         let affinity = affinity::get_thread_affinity().unwrap();

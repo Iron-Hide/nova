@@ -3,7 +3,7 @@
 A reference implementation of an off-chain [state channel](https://ethereum.org/en/developers/docs/scaling/state-channels/)
 built using [Anza's SVM API](https://www.anza.xyz/blog/anzas-new-svm-api).
 
-With the release of Agave 2.0, we've decoupled the SVM API from the rest of the
+With the release of Nova 2.0, we've decoupled the SVM API from the rest of the
 runtime, which means it can be used outside the validator. This unlocks
 SVM-based solutions such as sidecars, channels, rollups, and more. This project
 demonstrates everything you need to know about bootstrapping with this new API.

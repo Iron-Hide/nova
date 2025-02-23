@@ -835,7 +835,7 @@ impl AccountsHasher<'_> {
                 || {
                     DedupResult {
                         // Allocate with Vec::new() so that no allocation actually happens. See
-                        // https://github.com/anza-xyz/agave/pull/1308.
+                        // https://github.com/anza-xyz/nova/pull/1308.
                         hashes_files: Vec::new(),
                         ..Default::default()
                     }

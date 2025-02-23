@@ -38,7 +38,7 @@ env:
 
 jobs:
   check:
-    if: github.repository == 'anza-xyz/agave'
+    if: github.repository == 'anza-xyz/nova'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -75,7 +75,7 @@ jobs:
           cargo check
 
   test_cli:
-    if: github.repository == 'anza-xyz/agave'
+    if: github.repository == 'anza-xyz/nova'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -104,7 +104,7 @@ jobs:
           cargo test --manifest-path clients/cli/Cargo.toml
 
   cargo-test-sbf:
-    if: github.repository == 'anza-xyz/agave'
+    if: github.repository == 'anza-xyz/nova'
     runs-on: ubuntu-latest
     strategy:
       matrix:

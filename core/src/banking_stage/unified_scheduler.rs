@@ -33,7 +33,7 @@ use {
         LikeClusterInfo,
     },
     crate::banking_trace::Channels,
-    agave_banking_stage_ingress_types::BankingPacketBatch,
+    nova_banking_stage_ingress_types::BankingPacketBatch,
     solana_poh::poh_recorder::PohRecorder,
     solana_runtime::{bank_forks::BankForks, root_bank_cache::RootBankCache},
     solana_unified_scheduler_pool::{BankingStageHelper, DefaultSchedulerPool},

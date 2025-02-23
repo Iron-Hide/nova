@@ -54,7 +54,7 @@ relationship with the validator.
                                        Figure 1.
 
 The Vortexor is a new executable that can be deployed on nodes separate from
-the core Agave validator. It can also be deployed on the same node as the core
+the core Nova validator. It can also be deployed on the same node as the core
 validator if the node has sufficient performance bandwidth.
 
 It has the following major components:

@@ -157,7 +157,7 @@ resolver = "2"
 [workspace.package]
 version = "2.2.0"
 authors = ["Anza Maintainers <maintainers@anza.xyz>"]
-repository = "https://github.com/anza-xyz/agave"
+repository = "https://github.com/anza-xyz/nova"
 homepage = "https://anza.xyz/"
 license = "Apache-2.0"
 edition = "2021"
@@ -172,8 +172,8 @@ check-cfg = [
 [workspace.dependencies]
 Inflector = "0.11.4"
 axum = "0.7.9"
-agave-banking-stage-ingress-types = { path = "banking-stage-ingress-types", version = "=2.2.0" }
-agave-transaction-view = { path = "transaction-view", version = "=2.2.0" }
+nova-banking-stage-ingress-types = { path = "banking-stage-ingress-types", version = "=2.2.0" }
+nova-transaction-view = { path = "transaction-view", version = "=2.2.0" }
 aquamarine = "0.6.0"
 aes-gcm-siv = "0.11.1"
 ahash = "0.8.11"
@@ -375,8 +375,8 @@ solana-bpf-loader-program = { path = "programs/bpf_loader", version = "=2.2.0" }
 solana-bucket-map = { path = "bucket_map", version = "=2.2.0" }
 solana-builtins = { path = "builtins", version = "=2.2.0" }
 solana-builtins-default-costs = { path = "builtins-default-costs", version = "=2.2.0" }
-agave-cargo-registry = { path = "cargo-registry", version = "=2.2.0" }
-agave-thread-manager = { path = "thread-manager", version = "=2.2.0" }
+nova-cargo-registry = { path = "cargo-registry", version = "=2.2.0" }
+nova-thread-manager = { path = "thread-manager", version = "=2.2.0" }
 solana-clap-utils = { path = "clap-utils", version = "=2.2.0" }
 solana-clap-v3-utils = { path = "clap-v3-utils", version = "=2.2.0" }
 solana-cli = { path = "cli", version = "=2.2.0" }
@@ -423,7 +423,7 @@ solana-file-download = "=2.2.1"
 solana-genesis = { path = "genesis", version = "=2.2.0" }
 solana-genesis-config = "=2.2.1"
 solana-genesis-utils = { path = "genesis-utils", version = "=2.2.0" }
-agave-geyser-plugin-interface = { path = "geyser-plugin-interface", version = "=2.2.0" }
+nova-geyser-plugin-interface = { path = "geyser-plugin-interface", version = "=2.2.0" }
 solana-geyser-plugin-manager = { path = "geyser-plugin-manager", version = "=2.2.0" }
 solana-gossip = { path = "gossip", version = "=2.2.0" }
 solana-hard-forks = "=2.2.1"

@@ -150,12 +150,12 @@ matches the logical flow in your PR description.
 
 Labels make it easier to manage and track PRs / issues.  Below some common labels
 that we use in Solana.  For the complete list of labels, please refer to the
-[label page](https://github.com/anza-xyz/agave/issues/labels):
+[label page](https://github.com/anza-xyz/nova/issues/labels):
 
 * "feature-gate": when you add a new feature gate or modify the behavior of
 an existing feature gate, please add the "feature-gate" label to your PR.
 New feature gates should also always have a corresponding tracking issue
-(go to "New Issue" -> "Feature Gate Tracker [Get Started](https://github.com/anza-xyz/agave/issues/new?assignees=&labels=feature-gate&template=1-feature-gate.yml&title=Feature+Gate%3A+)")
+(go to "New Issue" -> "Feature Gate Tracker [Get Started](https://github.com/anza-xyz/nova/issues/new?assignees=&labels=feature-gate&template=1-feature-gate.yml&title=Feature+Gate%3A+)")
 and should be updated each time the feature is activated on a cluster.
 
 * "automerge": When a PR is labelled with "automerge", the PR will be
@@ -230,7 +230,7 @@ Note that these lists are *independent* of how simple/complicated the actual
 ## Draft Pull Requests
 
 If you want early feedback on your PR, use GitHub's "Draft Pull Request"
-mechanism. Draft PRs are a convenient way to collaborate with the Agave
+mechanism. Draft PRs are a convenient way to collaborate with the Nova
 maintainers without triggering notifications as you make changes. When you feel
 your PR is ready for a broader audience, you can transition your draft PR to a
 standard PR with the click of a button.
@@ -285,8 +285,8 @@ confused with 3-letter acronyms.
 
 ## Design Proposals
 
-This Agave validator client's architecture is described by docs generated from markdown files in the `docs/src/`
-directory and viewable on the official [Agave Validator Client](https://docs.anza.xyz) documentation website.
+This Nova validator client's architecture is described by docs generated from markdown files in the `docs/src/`
+directory and viewable on the official [Nova Validator Client](https://docs.anza.xyz) documentation website.
 
 Current design proposals may be viewed on the docs site:
 

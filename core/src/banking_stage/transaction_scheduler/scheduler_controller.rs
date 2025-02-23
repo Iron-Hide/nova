@@ -466,7 +466,7 @@ mod tests {
             },
             TransactionViewReceiveAndBuffer,
         },
-        agave_banking_stage_ingress_types::{BankingPacketBatch, BankingPacketReceiver},
+        nova_banking_stage_ingress_types::{BankingPacketBatch, BankingPacketReceiver},
         crossbeam_channel::{unbounded, Receiver, Sender},
         itertools::Itertools,
         solana_gossip::cluster_info::ClusterInfo,

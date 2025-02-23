@@ -712,7 +712,7 @@ impl TypedColumn for columns::Index {
         // 2. Release 2: Switch to writing new format, keep reading old format as fallback
         // 3. Release 3: Remove old format support once stable
         // This allows safe downgrade to Release 1 since it can read both formats
-        // https://github.com/anza-xyz/agave/issues/3570
+        // https://github.com/anza-xyz/nova/issues/3570
         let index: bincode::Result<blockstore_meta::Index> = config.deserialize(data);
         match index {
             Ok(index) => Ok(index),

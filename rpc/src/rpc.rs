@@ -2762,7 +2762,7 @@ pub mod rpc_minimal {
         #[rpc(meta, name = "getVersion")]
         fn get_version(&self, meta: Self::Metadata) -> Result<RpcVersionInfo>;
 
-        // TODO: Refactor `agave-validator wait-for-restart-window` to not require this method, so
+        // TODO: Refactor `nova-validator wait-for-restart-window` to not require this method, so
         //       it can be removed from rpc_minimal
         #[rpc(meta, name = "getVoteAccounts")]
         fn get_vote_accounts(
@@ -2771,7 +2771,7 @@ pub mod rpc_minimal {
             config: Option<RpcGetVoteAccountsConfig>,
         ) -> Result<RpcVoteAccountStatus>;
 
-        // TODO: Refactor `agave-validator wait-for-restart-window` to not require this method, so
+        // TODO: Refactor `nova-validator wait-for-restart-window` to not require this method, so
         //       it can be removed from rpc_minimal
         #[rpc(meta, name = "getLeaderSchedule")]
         fn get_leader_schedule(
@@ -2897,7 +2897,7 @@ pub mod rpc_minimal {
             })
         }
 
-        // TODO: Refactor `agave-validator wait-for-restart-window` to not require this method, so
+        // TODO: Refactor `nova-validator wait-for-restart-window` to not require this method, so
         //       it can be removed from rpc_minimal
         fn get_vote_accounts(
             &self,
@@ -2908,7 +2908,7 @@ pub mod rpc_minimal {
             meta.get_vote_accounts(config)
         }
 
-        // TODO: Refactor `agave-validator wait-for-restart-window` to not require this method, so
+        // TODO: Refactor `nova-validator wait-for-restart-window` to not require this method, so
         //       it can be removed from rpc_minimal
         fn get_leader_schedule(
             &self,

@@ -4,10 +4,10 @@
 declare dcou_tainted_packages=(
   solana-accounts-bench
   solana-banking-bench
-  agave-ledger-tool
+  nova-ledger-tool
   solana-bench-tps
-  agave-store-tool
-  agave-store-histogram
-  agave-accounts-hash-cache-tool
+  nova-store-tool
+  nova-store-histogram
+  nova-accounts-hash-cache-tool
   solana-dos
 )

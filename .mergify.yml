@@ -50,7 +50,7 @@ pull_request_rules:
   - name: automatic merge (squash) on CI success
     conditions:
       - and:
-        - status-success=buildkite/agave
+        - status-success=buildkite/nova
         - status-success=ci-gate
         - label=automerge
         - label!=no-automerge
@@ -213,7 +213,7 @@ pull_request_rules:
         message: |
           The Firedancer team maintains a line-for-line reimplementation of the
           native programs, and until native programs are moved to BPF, those
-          implementations must exactly match their Agave counterparts.
+          implementations must exactly match their Nova counterparts.
           If this PR represents a change to a native program implementation (not
           tests), please include a reviewer from the Firedancer team. And please
           keep refactors to a minimum.

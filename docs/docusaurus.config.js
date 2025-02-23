@@ -1,14 +1,14 @@
 const math = require("remark-math");
 const katex = require("rehype-katex");
 module.exports = {
-  title: "Agave",
+  title: "Nova",
   tagline:
-    "Agave is an open source project implementing a new, high-performance, permissionless blockchain.",
+    "Nova is an open source project implementing a new, high-performance, permissionless blockchain.",
   url: "https://docs.anza.xyz",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "anza-xyz", // Usually your GitHub org/user name.
-  projectName: "agave", // Usually your repo name.
+  projectName: "nova", // Usually your repo name.
   onBrokenLinks: "throw",
   stylesheets: [
     {
@@ -93,7 +93,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/anza-xyz/agave/",
+          href: "https://github.com/anza-xyz/nova/",
           // label: "GitHub",
           className: "header-link-icon header-github-link",
           "aria-label": "GitHub repository",
@@ -141,7 +141,7 @@ module.exports = {
             },
             {
               label: "GitHub »",
-              href: "https://github.com/anza-xyz/agave",
+              href: "https://github.com/anza-xyz/nova",
             },
             {
               label: "Discord »",

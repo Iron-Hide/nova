@@ -14,9 +14,9 @@ edition = { workspace = true }
 codecov = { repository = "solana-labs/solana", branch = "master", service = "github" }
 
 [dependencies]
-agave-banking-stage-ingress-types = { workspace = true }
-agave-thread-manager = { workspace = true }
-agave-transaction-view = { workspace = true }
+nova-banking-stage-ingress-types = { workspace = true }
+nova-thread-manager = { workspace = true }
+nova-transaction-view = { workspace = true }
 ahash = { workspace = true }
 anyhow = { workspace = true }
 arrayvec = { workspace = true }

@@ -1,5 +1,5 @@
 use {
-    agave_banking_stage_ingress_types::{BankingPacketBatch, BankingPacketReceiver},
+    nova_banking_stage_ingress_types::{BankingPacketBatch, BankingPacketReceiver},
     bincode::serialize_into,
     chrono::{DateTime, Local},
     crossbeam_channel::{unbounded, Receiver, SendError, Sender, TryRecvError},

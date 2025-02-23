@@ -1,7 +1,7 @@
 /// Module responsible for notifying plugins of account updates
 use {
     crate::geyser_plugin_manager::GeyserPluginManager,
-    agave_geyser_plugin_interface::geyser_plugin_interface::{
+    nova_geyser_plugin_interface::geyser_plugin_interface::{
         ReplicaAccountInfoV3, ReplicaAccountInfoVersions,
     },
     log::*,

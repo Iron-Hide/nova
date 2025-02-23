@@ -1,5 +1,5 @@
 use {
-    agave_transaction_view::bytes::{optimized_read_compressed_u16, read_compressed_u16},
+    nova_transaction_view::bytes::{optimized_read_compressed_u16, read_compressed_u16},
     bincode::{serialize_into, DefaultOptions, Options},
     criterion::{black_box, criterion_group, criterion_main, Criterion, Throughput},
     solana_packet::PACKET_DATA_SIZE,

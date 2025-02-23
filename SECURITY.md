@@ -5,11 +5,11 @@
 2. [Incident Response Process](#process)
 
 <a name="reporting"></a>
-## Reporting security problems in the Agave Validator
+## Reporting security problems in the Nova Validator
 
 **DO NOT CREATE A GITHUB ISSUE** to report a security problem.
 
-Instead please use this [Report a Vulnerability](https://github.com/anza-xyz/agave/security/advisories/new) link.
+Instead please use this [Report a Vulnerability](https://github.com/anza-xyz/nova/security/advisories/new) link.
 Provide a helpful title, detailed description of the vulnerability and an exploit
 proof-of-concept. Speculative submissions without proof-of-concept will be closed
 with no further consideration.

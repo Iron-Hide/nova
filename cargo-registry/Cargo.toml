@@ -1,7 +1,7 @@
 [package]
-name = "agave-cargo-registry"
+name = "nova-cargo-registry"
 description = "Solana cargo registry"
-documentation = "https://docs.rs/agave-cargo-registry"
+documentation = "https://docs.rs/nova-cargo-registry"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }

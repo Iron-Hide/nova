@@ -26,7 +26,7 @@ ok=true
 for program in solana-{faucet,genesis,keygen}; do
   $program -V || ok=false
 done
-agave-validator -V || ok=false
+nova-validator -V || ok=false
 
 $ok || {
   echo
@@ -37,7 +37,7 @@ $ok || {
   exit 1
 }
 
-export RUST_LOG=${RUST_LOG:-solana=info,agave=info,solana_runtime::message_processor=debug} # if RUST_LOG is unset, default to info
+export RUST_LOG=${RUST_LOG:-solana=info,nova=info,solana_runtime::message_processor=debug} # if RUST_LOG is unset, default to info
 export RUST_BACKTRACE=1
 dataDir=$PWD/config/"$(basename "$0" .sh)"
 ledgerDir=$PWD/config/ledger
@@ -117,7 +117,7 @@ args=(
   --no-os-network-limits-test
 )
 # shellcheck disable=SC2086
-agave-validator "${args[@]}" $SOLANA_RUN_SH_VALIDATOR_ARGS &
+nova-validator "${args[@]}" $SOLANA_RUN_SH_VALIDATOR_ARGS &
 validator=$!
 
 wait "$validator"

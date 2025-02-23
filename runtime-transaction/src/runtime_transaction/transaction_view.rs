@@ -5,7 +5,7 @@ use {
         transaction_meta::{StaticMeta, TransactionMeta},
         transaction_with_meta::TransactionWithMeta,
     },
-    agave_transaction_view::{
+    nova_transaction_view::{
         resolved_transaction_view::ResolvedTransactionView, transaction_data::TransactionData,
         transaction_version::TransactionVersion, transaction_view::SanitizedTransactionView,
     },

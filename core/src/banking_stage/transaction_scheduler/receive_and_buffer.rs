@@ -16,8 +16,8 @@ use {
         transaction_scheduler::transaction_state::SanitizedTransactionTTL,
         TransactionStateContainer,
     },
-    agave_banking_stage_ingress_types::{BankingPacketBatch, BankingPacketReceiver},
-    agave_transaction_view::{
+    nova_banking_stage_ingress_types::{BankingPacketBatch, BankingPacketReceiver},
+    nova_transaction_view::{
         resolved_transaction_view::ResolvedTransactionView,
         transaction_version::TransactionVersion, transaction_view::SanitizedTransactionView,
     },

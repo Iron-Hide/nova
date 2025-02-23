@@ -122,7 +122,7 @@ pub fn execute(
         let logfile = matches
             .value_of("logfile")
             .map(|s| s.into())
-            .unwrap_or_else(|| format!("agave-validator-{}.log", identity_keypair.pubkey()));
+            .unwrap_or_else(|| format!("nova-validator-{}.log", identity_keypair.pubkey()));
 
         if logfile == "-" {
             None

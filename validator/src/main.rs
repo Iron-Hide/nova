@@ -2,7 +2,7 @@
 #[cfg(not(any(target_env = "msvc", target_os = "freebsd")))]
 use jemallocator::Jemalloc;
 use {
-    agave_validator::{
+    nova_validator::{
         cli::{app, warn_for_deprecated_arguments, DefaultArgs},
         commands,
     },

@@ -10,7 +10,7 @@ license = { workspace = true }
 edition = { workspace = true }
 
 [dependencies]
-agave-transaction-view = { workspace = true }
+nova-transaction-view = { workspace = true }
 log = { workspace = true }
 solana-compute-budget = { workspace = true }
 solana-compute-budget-instruction = { workspace = true }

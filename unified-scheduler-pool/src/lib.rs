@@ -15,7 +15,7 @@
 #[cfg(feature = "dev-context-only-utils")]
 use qualifier_attr::qualifiers;
 use {
-    agave_banking_stage_ingress_types::{BankingPacketBatch, BankingPacketReceiver},
+    nova_banking_stage_ingress_types::{BankingPacketBatch, BankingPacketReceiver},
     assert_matches::assert_matches,
     crossbeam_channel::{self, never, select_biased, Receiver, RecvError, SendError, Sender},
     dashmap::DashMap,
