@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://solana.com">
-    <img alt="Solana" src="https://i.imgur.com/0vfIMHo.png" width="250" />
+    <img alt="Nova" src="NOVA" width="250" />
   </a>
 </p>
 
