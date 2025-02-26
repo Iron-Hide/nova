@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://solana.com">
     <img alt="Nova" src="NOVA" width="250" />
-  </a>
 </p>
 
 [![Solana crate](https://img.shields.io/crates/v/solana-core.svg)](https://crates.io/crates/solana-core)
